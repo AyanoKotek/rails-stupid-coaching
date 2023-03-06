@@ -1,0 +1,20 @@
+<div class="container">
+  <figure class="alert alert-light" role="alert">
+    <blockquote class="blockquote">
+      <p ><%= params[:question] %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">You</cite>
+    </figcaption>
+  </figure>
+
+  <div class="alert alert-warning border-left" role="alert">
+    <blockquote class="blockquote">
+      <p ><%= @answer %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">Coach</cite>
+    </figcaption>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
